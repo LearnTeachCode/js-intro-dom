@@ -1,6 +1,6 @@
 # Part 2: Interacting with the web page (Document Object Model)
 
-:point_left: ***[Previous section: Variables and data types](https://github.com/LearnTeachCode/beginner-javascript-workshop/blob/master/1-variable-challenges.md)***
+:point_left: ***[Previous section: Variables and data types](https://github.com/LearnTeachCode/js-intro-dom/blob/master/1-intro-console.md)***
 
 
 The ***Document Object Model (DOM)*** refers to how the web browser sees a web page -- as a *hierarchy* of objects, each with its own set of characteristics (like the text inside it, the font, the color, etc). We use the term ***DOM element*** to refer to pieces of the web page like a paragraph (`<p>`), an image (`<img>`), a heading (`<h1>`), etc.
@@ -146,4 +146,4 @@ This is a Google challenge! Look online to figure out how to ***change the backg
 <br/>
 <hr/>
 
-:trophy: ***Great job!*** **[Next up: Events and event listeners](https://github.com/LearnTeachCode/beginner-javascript-workshop/blob/master/3-event-challenges.md)**
+:trophy: ***Great job!*** **[Next up: Events and event listeners](https://github.com/LearnTeachCode/js-intro-dom/blob/master/3-event-challenges.md)**
