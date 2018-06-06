@@ -85,4 +85,4 @@ Let's take the code from the previous challenge and ***break it several differen
 <br/>
 <hr/>
 
-:trophy: ***Great job!*** **[Next up: Interacting with the web page (Document Object Model)](https://github.com/LearningNerd/js-intro-dom/blob/master/2-dom-challenges.md)**
+:trophy: ***Great job!*** **[Next up: Interacting with the web page (Document Object Model)](https://github.com/LearnTeachCode/js-intro-dom/blob/master/2-dom-challenges.md)**
