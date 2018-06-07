@@ -70,13 +70,13 @@ Using what you learned in our previous set of challenges, add one more additiona
 
 <br/>
 
-## Challenge 4:
+## Challenge 3:
 
 Modify your code for the previous challenge so that when the user clicks on the page, instead of overwriting the *entire page*, your code will only overwrite the text inside the paragraph with the **ID of `"outcome"`**.
 
 <br/>
 
-## Challenge 5:
+## Challenge 4:
 
 For this game, the user should only be able to click on the *button*, not the entire page! Change the first part of your code so that the event listener is only "listening" on *the button itself*.
 
