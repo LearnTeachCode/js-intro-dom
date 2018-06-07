@@ -1,15 +1,21 @@
 # Part 2: Interacting with the web page (Document Object Model)
 
-:point_left: ***[Previous section: Variables and data types](https://github.com/LearnTeachCode/js-intro-dom/blob/master/1-intro-console.md)***
+:point_left: ***[Previous section: Group intros and using the console](https://github.com/LearnTeachCode/js-intro-dom/blob/master/1-intro-console.md)***
 
 
-The ***Document Object Model (DOM)*** refers to how the web browser sees a web page -- as a *hierarchy* of objects, each with its own set of characteristics (like the text inside it, the font, the color, etc). We use the term ***DOM element*** to refer to pieces of the web page like a paragraph (`<p>`), an image (`<img>`), a heading (`<h1>`), etc.
+The ***Document Object Model (DOM)*** refers to how the web browser sees a web page -- as a *hierarchy* of objects, each with its own set of characteristics (like the text inside it, the font, the color, etc).
 
-Let's use JavaScript to access the **DOM** and modify the HTML and CSS of some web pages! For the following challenges, you'll be using the Glitch links provided to test out some example code, fix some bugs, and create some bugs of your own.
+![dom-diagram](https://user-images.githubusercontent.com/1555022/41071577-7a781542-69ad-11e8-97dd-274355e2d2d1.png)
+
+We use the term ***DOM element*** to refer to pieces of the web page like a paragraph (`<p>`), an image (`<img>`), a heading (`<h1>`), etc.
+
+<br/>
+
+:trophy: Let's use JavaScript to access the **DOM** and modify the HTML and CSS of some web pages! For the following challenges, you'll be using the Glitch links provided to test out some example code, fix some bugs, and create some bugs of your own.
 
 <hr/>
 
-## How to use Glitch
+## How to use Glitch for our next challenges
 
 **Instructions:**
 
@@ -80,23 +86,35 @@ Next, **your challenge:**
 
 ## Selecting specific elements of the web page
 
-The `document.getElementById()` function in JavaScript takes **one input**: the ID of whichever HTML element you want to access. For example, to change the text inside that example paragraph with the ID of `"special"`, we can do this:
+Notice that for challenges #1, 2 and 3 above, we used JavaScript to change the text of ***document.body***, the **entire** body of the web page! But for challenge #4, we changed the text of just ***one paragraph***.
+
+<br/>
+
+The **`document.getElementById()`** function in JavaScript lets us easily access ***just one element*** of the web page. It takes **one input**: the ID of whichever HTML element you want to access:
+
+![getelementbyid-example](https://user-images.githubusercontent.com/1555022/41071606-acf9eb58-69ad-11e8-8c71-63ebabdfa948.png)
+
+<br/>
+
+For example, to change the text inside that example paragraph with the ID of `"main"`, we can do this:
   
 ```javascript
-document.getElementById("special").textContent = "This text will overwrite the text of a special paragraph.";
+document.getElementById("main").textContent = "This text will overwrite the text of a special paragraph.";
 ```
 
 <br>
 
-Notice how the `document.getElementById()` function is ***interchangeable*** with `document.body` in JavaScript code:
+Notice how the `document.getElementById()` function is ***interchangeable*** with `document.body` in JavaScript code, like Lego blocks that can go into the same slot in our code:
 
 ```javascript
-// Using body
+// Using document.body
 document.body.textContent = "This replaces the text of the entire body element.";
 
 // Using the getElementById() function
-document.getElementById("special").textContent = "This replaces the text of that special paragraph.";
+document.getElementById("main").textContent = "This replaces the text of that special paragraph.";
 ```
+
+![textcontent-example](https://user-images.githubusercontent.com/1555022/41071785-e859b268-69ae-11e8-9f0a-a29b7c902029.png)
 
 <br>
 
