@@ -57,9 +57,11 @@ console.log("Hi, I'm Liz! I do freelance web dev, teach coding classes, and run 
 
 <br/>
 
-You'll see that `console.log()` allows us to display the value of a variable inside the web browser's console! The code `console.log("hi")` would display the following inside your browser's console:
+## Displaying messages from your code into the console
 
-![console-hi](https://user-images.githubusercontent.com/1555022/40753351-82252724-6428-11e8-857f-3acfa62ab270.png)
+You'll see that `console.log()` allows us to display a message (or the value of some data!) inside the web browser's console! The code `console.log("hi")` would display the following inside your browser's console:
+
+![consolelog-hi](https://user-images.githubusercontent.com/1555022/41071035-d340ea9e-69aa-11e8-9585-a0477f15fa46.png)
 
 <br/>
 
