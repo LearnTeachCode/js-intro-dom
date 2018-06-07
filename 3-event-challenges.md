@@ -2,9 +2,9 @@
 
 :point_left: ***[Previous section: Interacting with the web page (Document Object Model)](https://github.com/LearnTeachCode/beginner-javascript-workshop/blob/master/2-dom-challenges.md)***
 
-Events and event listeners allow you to respond to user input (among many other types of events), telling a section of your code to *wait* until a particular event occurs, and then execute one of your functions when triggered by the event.
+Events and event listeners allow you to **respond to user input (among many other types of events)**, telling a section of your code to *wait* until a particular event occurs, and then execute one of your functions when triggered by the event.
 
-Web browsers provide a built-in JavaScript function named `document.addEventListener()`, which is available on any DOM element in JavaScript -- so *any* element of the web page can respond to various actions from the user!
+Web browsers provide a built-in JavaScript function named **`document.addEventListener()`**, which is available on any DOM element in JavaScript -- so *any* element of the web page can respond to various actions from the user!
 
 <hr/>
 
@@ -33,8 +33,26 @@ To trigger the event, click anywhere on the web page. Then look inside the conso
 Every time you use an event listener, there are **three main questions** you'll need to answer:
 
   1. **Where is the event happening?** Here, it's happening anywhere in the `document.body` (the `<body>`, the entire web page!)
+  
   2. **Which event are we listening for?** Here, it's a `"click"` event ([see the list of all built-in events here!](https://developer.mozilla.org/en-US/docs/Web/Events))
+  
   3. **What should happen when the event occurs?** Here, we run our function named `logClick`
+
+<br/>
+
+## Event listener example diagram
+
+![eventlistener-example](https://user-images.githubusercontent.com/1555022/41071909-97028790-69af-11e8-94fd-2c3fada9499d.png)
+
+**Answering the three questions for the example in the picture above:**
+
+  1. **Where is the event happening?** On the DOM element with the id of `"main"`.
+  
+  2. **Which event are we listening for?** A `"click"` event ([again, see the list of all built-in events here!](https://developer.mozilla.org/en-US/docs/Web/Events))
+  
+  3. **What should happen when the event occurs?** Here, we run our function named `funcName`
+
+:bulb: Notice how **`document.body`** and **`document.getElementById("main")`** are also ***interchangeable*** here, like in the examples we learned in the previous section!
 
 <br/>
 
@@ -60,11 +78,11 @@ Modify your code for the previous challenge so that when the user clicks on the 
 
 ## Challenge 5:
 
-For this game, the user should only be able to click on the *button*, not the entire page! Change the first part of your code so that the event listener is only "listening" on the button itself.
+For this game, the user should only be able to click on the *button*, not the entire page! Change the first part of your code so that the event listener is only "listening" on *the button itself*.
 
   1. First, you'll need to look in the HTML file to see how to identify the button!
   
-  2. Then you'll need to *switch out* the piece of your code that represents the whole body of the web page, and *replace* it with some code that represents the button.
+  2. Then you'll need to *switch out* the piece of your event listener code that represents the whole body of the web page, and *replace* it with some code that represents the button.
 
 <br/>
 
